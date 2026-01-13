@@ -1,88 +1,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 .work-sans{
+
   font-family: "Work Sans", sans-serif;
+
   font-optical-sizing: auto;
+
   font-weight: 400px;
+
   font-style: normal;
+
 }
+
+
 
 /* shared styles */
+
 .display-flex{
+
     display: flex;
+
 }
+
 .bg-light{
+
     background-color: rgba(255, 144, 14, 0.1);
+
 }
+
+
 
 /* header style */
+
 /* navbar related styles */
+
 .navbar{
+
     justify-content: space-between;
-    
+
+   
+
 }
+
 .nav-item{
+
     list-style: none;
+
     margin-right: 20px;
+
     margin-top: 50px;
+
 }
+
 .nav-link{
+
     text-decoration: none;
+
     margin-right: 60px;
-    
+
+   
+
 }
+
 .text-gray{
+
     color: #424242
+
 }
+
 .navbar,.banner{
+
     max-width: 1440px;
+
     margin: 0 auto;
-}
-.brand{
-    margin-left: 130px;
+
 }
 
 .brand{
+
+    margin-left: 130px;
+
+}
+
+
+
+.brand{
+
     font-weight: 700;
+
     font-size: 2.5rem;
 
+
+
 }
+
 .brand-new{
+
     justify-content: center;
+
     text-align: center;
+
 }
+
 .brand-new h1{
+
     font-size: 3rem;
+
 }
+
 .btn{
+
     width: 160px;
+
     height: 40px;
+
     cursor: pointer;
+
     border: none;
+
     background-color: #FF900E;
+
     border-radius: 10px;
+
     font-size: 1.1rem;
+
     color: aliceblue;
+
 }
+
 .middle-pic img{
+
     width: 1300px;
+
     height: 600px;
+
     /* height: 500px; */
+
     margin-top: 50px;
+
     margin-left: 100px;
+
 }
+.middle-page{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 100px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid img{
+    width: 250px;
+}
+.info{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.info h2{
+    font-size: 2rem;
+}
+.info .a{
+    color: #727272;
+}
+.info .b{
+    color:#FF900E;
+}
+
+.big-banner{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    
+}
+.big-pic img{
+    width: 600px;
+    /* height: 600px; */
+}
+.big-pic{
+    display: flex;
+    flex-direction: column;
+}
+.left-main{
+    margin-right: 100px;
+}
+.left-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 30px;
+}
+
+.btn-big{
+    background-color: #FF900E;
+    color: aliceblue;
+    padding: 30px;
+    width: 342px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 200px;
+    
+    
+}
+.btn-big .big-text{
+    font-size: 5rem;
+    
+}
+.btn-big .ll{
+    font-size: 1.5rem;
+}
+
+
+
 
 
 @media screen and (max-width: 576px) {
+
     body {
+
         transform: scale(0.35);
+
         transform-origin: top left;
+
         width: 1440px;
+
+    }
+ .brand,
+
+    .middle-pic img {
+
+        margin-left: 0;
+
     }
 
-    .brand,
-    .middle-pic img {
-        margin-left: 0;
-    }
 }
 
+
+
+/* Facts Section Style */
+.facts-container {
+    max-width: 1140px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #131313;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    max-width: 540px;
+    margin-bottom: 50px;
+}
+
+.facts-card-container {
+    justify-content: space-between;
+    column-gap: 25px; /* কার্ডগুলোর মাঝে হরিজন্টাল গ্যাপ */
+}
+
+.fact-card {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-10px); /* মাউস নিলে কার্ড একটু উপরে উঠবে */
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    color: #424242;
+    margin: 10px 0;
+}
+
+.fact-description {
+    color: #727272;
+    font-weight: 600;
+}
+
+/* Sponsors Style */
+.sponsors-container {
+    max-width: 1140px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.sponsors-img-container {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    filter: grayscale(100%); /* লোগোগুলোকে ধূসর দেখাবে */
+    opacity: 0.6;
+    column-gap: 50px; /* লোগোগুলোর মাঝে গ্যাপ */
+}
+
+.text-center { text-align: center; margin-left: auto; margin-right: auto; }
+
+/* Footer Style */
+.footer-bg {
+    background: #FFF4E7;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 50px 20px;
+}
+
+.footer-bg p {
+    color: #424242;
+    font-size: 1.1rem;
+}
+footer p{
+    margin-left: 500px;
+}
